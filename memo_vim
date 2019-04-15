@@ -1,0 +1,41 @@
+************************* MEMO VIM *********************************
+
+Mode commande : [echap]
+Mode insertion : [i]
+Mode visuel : [v]
+
+On fait l'action sur la ligne : doubler la commande (d devient dd) 
+Faire l'action sur la ligne APRES : MAJUSCULE 
+Faire l'action sur la ligne AVANT : MINUSCULE  
+
+/////COPIER COLLER ETC//////
+
+d = couper
+p = coller
+y = copier
+
+dw = efface le mot jusqu'au suivant 
+di" = delete inside guillement, supprime tout ce qu'il ya entre les guillemets 
+d$ = supprimer jusqu'a la fin de la ligne 
+
+/ = chercher
+n = trouver le mot suivant
+N = trouver le mot precedent 
+:%cherche/remplacement/g = chercher et remplacer un mot par un autre
+
+
+/////SE DEPLACER/////
+
+:4 = aller a la ligne 4
+:q = sortir 
+:q! = sortir sans sauvegarder 
+:wq = sortier et sauvegarder 
+
+gg = va au premier caractere de la PREMIERE ligne
+G = va au premier caractere de la DERNIERE ligne 
+
+
+//////BUFFERS//////
+
+
+

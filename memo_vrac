@@ -1,0 +1,22 @@
+*********************************************MEMO******************************************
+
+///////// COMMANDES /////////
+wpa_gui = visionner Wifi
+
+
+////////// DAEMON ///////////
+/etc/init.d/ntp-client start = remettre l'ordi  l'heure 
+/etc/init.d/net.enp2s0 start = allumer carte reseau
+
+
+
+////// OU TROUVER INFO ///////
+Informations pc --> cat /proc/cpuinfo
+
+
+
+///// SPECIFIQUE GENTOO //////
+Ajouter fichier dans /etc/portage/package.use
+Nommer le fichier nomdupaquet.use
+Ajouter le noms de uses a ajouter a la suitre avec des espaces ex :
+[x11-terms/rxvt-unicode xft unicode3 blink]
