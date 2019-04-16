@@ -1,0 +1,18 @@
+EXEMPLE COMMENTE D UN MAKEFILE 
+
+CC = gcc --> compilateur a utiliser 
+CFLAGS = `pkg-config --cflags gtk+-2.0` --> ou trouver info 
+LDFLAGS = `pkg-config --libs gtk+-2.0` --> librairies 
+
+test_troll: troll.o --> "Pour creer l'executable test_troll il faut un troll.o. L'excecutable se creer comme suit : 
+	$(CC) -o $@ $^ $(LDFLAGS) 
+
+%.o: %.c --> "Pour avoir le fichier .o il faut un .c, le .o se creer comme suit :" 
+	$(CC) -c $^ $(CFLAGS)
+
+--> Quand on fait la commande make clean il se passe ce qu'il suit : 
+.PHONY: clean
+clean:
+	rm -f *.o 
+	rm -f test_troll
+	rm -f *~
